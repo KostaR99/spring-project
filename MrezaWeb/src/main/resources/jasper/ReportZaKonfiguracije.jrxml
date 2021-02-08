@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportZaKonfiguracije" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="af5072a4-4d5d-4f72-be63-ac5d748dbd6f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="procenat" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="username" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="brojKonfiguracija" class="java.lang.Integer"/>
+	<variable name="UkupanBrojKonfiguracija" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{brojKonfiguracija}]]></variableExpression>
+	</variable>
+	<variable name="ProsecanBrojKonfiguracija" class="java.lang.Float" calculation="Average">
+		<variableExpression><![CDATA[$F{brojKonfiguracija}]]></variableExpression>
+	</variable>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="7ed5ca17-f8a6-4690-9212-fe02fd11a2e0"/>
+				<staticText>
+					<reportElement x="20" y="20" width="310" height="43" forecolor="#FFFFFF" uuid="eddbda24-65c7-431e-97ba-af231831377b"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PC MASTER RACE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="380" y="16" width="210" height="60" forecolor="#FFFFFF" uuid="27be3703-c808-4c0d-8d3d-0938eabb8690"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Statisticki pregled: Procenat korisnika koji imaju privatne konfiguracije]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43">
+			<staticText>
+				<reportElement mode="Opaque" x="230" y="13" width="100" height="30" forecolor="#FFFFFF" backcolor="#006699" uuid="f3c03912-669c-4bf5-a09b-e62d639df391">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfc22f6f-77da-4914-b688-74924ca91547"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="130" y="13" width="100" height="30" forecolor="#FFFFFF" backcolor="#006699" uuid="729ad761-daa5-4dac-85fb-51f9f5dabc5a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8348f001-6a05-4888-90f3-2777d2b0c9a4"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="330" y="13" width="100" height="30" forecolor="#FFFFFF" backcolor="#006699" uuid="87726d3c-f584-47f3-8c63-248e9dfc925a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc5ac4ff-e484-4d06-8920-5c091d3d700f"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[brojKonfiguracija]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30">
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="4a03f12f-a556-4070-a75d-17b9460a7eb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfc22f6f-77da-4914-b688-74924ca91547"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="2dd29538-00eb-473b-9db9-020f0bee42a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8348f001-6a05-4888-90f3-2777d2b0c9a4"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="0c69a8b8-c566-4ea2-9cdc-0b57ce3c2b48">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc5ac4ff-e484-4d06-8920-5c091d3d700f"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{brojKonfiguracija}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30">
+			<textField>
+				<reportElement x="475" y="0" width="100" height="30" uuid="f28141ab-4055-43ff-8496-e3741ade7acb"/>
+				<textFieldExpression><![CDATA[$V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="123">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="180" y="60" width="100" height="30" uuid="a932aae2-fff9-4f27-8d99-63ce16506ef0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{UkupanBrojKonfiguracija}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="60" width="100" height="30" uuid="35fd380a-4498-47a9-9be2-0db246a45f65"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{ProsecanBrojKonfiguracija}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="30" width="100" height="30" forecolor="#FFFFFF" backcolor="#006699" uuid="34190ee3-48b6-4750-b5ac-bbfd1960a4a0"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Ukupan broj konfiguracija]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="30" width="100" height="30" forecolor="#FFFFFF" backcolor="#006699" uuid="ee8a66d2-9779-4b7a-83cf-c438f0d6367f"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Prosecan broj konfiguracija]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="89" width="100" height="30" uuid="b53d5987-163b-492c-8a16-d03470896490"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{procenat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="101" y="89" width="179" height="30" uuid="89c1a83a-4949-4172-b655-ac3611432edc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Procenat korisnika sa konfiguracijama:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
