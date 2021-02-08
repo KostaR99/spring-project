@@ -1,6 +1,6 @@
 # springProject
-Spring-boot project for a simple social network where users can specifiy their dream PC configurations
-<a href = "https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h">Style template</a>
+Spring-boot project for a simple social network where users can specifiy their dream PC configurations<br>
+<a href = "https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_start_page&stacked=h">Style template</a><br>
 Version: 1.0
 
 # Avaible features for admin users:
