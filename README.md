@@ -16,7 +16,7 @@ Sending bug/user reports
 Following system
 Basic account functionalities (changing password,changing profile picture (1.1))
 
-Features to add in version 1.1:
+# Features to add in version 1.1:
 
 Picture upload
 Messaging system
